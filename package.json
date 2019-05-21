@@ -1,11 +1,11 @@
 {
-  "name": "e-cli",
-  "version": "1.0.0",
-  "description": "e-cli simple",
+  "name": "eric-cli",
+  "version": "1.0.1",
+  "description": "eric-cli simple",
   "bin": {
-    "e-cli": "./e-cli.js"
+    "eric-cli": "./eric-cli.js"
   },
-  "main": "e-cli.js",
+  "main": "eric-cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
