@@ -8,17 +8,26 @@
 下载的存放目录暂做固定tmp目录，可以做更改
 
 # 本地启动，参数说明
+
 ```bash
-# -s 为github路径
-node ./eric-cli.js -s Chaoleer/e-vue-ssr
+# -r owner/name
+GitHub - github:owner/name or simply owner/name
+# -b branch
+# -c 即 clone
+clone - boolean default false - If true use git clone instead of an http download. While this can be a bit slower, it does allow private repositories to be used if the appropriate SSH keys are setup.
+```
+
+```bash
+# -r 为github 用户/仓库名
+node ./eric-cli.js -r Chaoleer/e-vue-ssr
 
 # 安装后，以下同理
-eric-cli -s Chaoleer/e-vue-ssr
+eric-cli -r Chaoleer/e-vue-ssr
 
 # 指定分支
-node ./eric-cli.js -s Chaoleer/e-vue-ssr -b develop
+node ./eric-cli.js -r Chaoleer/e-vue-ssr -b develop
 
 # 指定download-git-repo包是否使用clone
-node ./eric-cli.js -s Chaoleer/e-vue-ssr -b develop -c
+node ./eric-cli.js -r Chaoleer/e-vue-ssr -b develop -c
 
 ```
